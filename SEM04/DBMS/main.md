@@ -54,6 +54,13 @@ SELECT Dept, COUNT(*) AS Total_Students FROM Student GROUP BY Dept;
 SELECT Dept FROM Student GROUP BY Dept HAVING COUNT(DISTINCT HOD) = 1;
 ```
 
+# altering column property : 
+```
+alter table employee modify emp_id int auto_increment;
+
+update employee set basic_salary = basic_salary * 1.1 where  name = 'Rahul';
+```
+
 
 
 
