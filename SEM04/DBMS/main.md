@@ -36,12 +36,16 @@ SELECT DISTINCT Dept_ID FROM Student;
 // basic filtering :
 SELECT * FROM Student WHERE Marks > 80;
 
-// pattern matching :
-SELECT * FROM Student WHERE Name LIKE 'M%a';
-SELECT * FROM Student WHERE Name LIKE '%e%';
 
 ```
 
+
+# pattern matching :
+
+```
+SELECT * FROM Student WHERE Name LIKE 'M%a';
+SELECT * FROM Student WHERE Name LIKE '%e%';
+```
 
 # Grouping data 
 
