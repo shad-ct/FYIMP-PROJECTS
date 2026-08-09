@@ -1,0 +1,35 @@
+
+implement the following numpy functions.np.array()
+np.zeros()
+np.ones()
+np.empty()
+np.eye()
+np.arange()
+np.linspace()
+np.random.rand()
+np.random.randint()
+
+
+Implement the following numpy statistical functions. np.mean(arr)
+np.median(arr)
+np.std(arr)
+np.var(arr)
+np.min(arr)
+np.max(arr)
+np.sum(arr)
+np.prod(arr)
+np.argmin(arr)
+np.argmax(arr)
+
+
+
+Write a Python program to import the NumPy library and display its version.
+Create a one-dimensional NumPy array containing the numbers 10, 20, 30, 40, and 50.
+Create a two-dimensional NumPy array of size 3 × 3 and display it.
+Create an array of all zeros of size 4 × 4.
+Create an array of all ones of size 2 × 5.
+Create an identity matrix of order 4 using NumPy.
+Generate numbers from 1 to 20 using np.arange().
+Generate 10 evenly spaced values between 0 and 100 using np.linspace().
+Generate a 3 × 3 array of random decimal numbers using np.random.rand().
+Generate a 4 × 4 array of random integers between 10 and 50 using np.random.randint().
