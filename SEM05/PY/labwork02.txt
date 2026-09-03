@@ -1,0 +1,34 @@
+List Data Type
+Write a program to create a list of five student marks and display the list.
+Write a program to find the maximum, minimum, and sum of elements in a list.
+Write a program to demonstrate indexing and slicing of a list.
+Write a program to add and remove elements from a list.
+
+Tuple Data Type
+Write a program to create a tuple containing five numbers and display its elements.
+Write a program to find the maximum and minimum values in a tuple.
+Write a program to demonstrate tuple indexing and slicing.
+
+Dictionary Data Type
+Write a program to create a dictionary containing a student's name, age, course, and mark and display the values.
+Write a program to add, modify, and delete elements in a dictionary.
+Write a program to display all the keys and values of a dictionary.
+
+String Data Type
+Write a program to accept a person's name and display:
+Name
+Number of characters
+First character
+Last character
+Write a program to concatenate first name and last name.
+Write a program to convert a string into uppercase and lowercase.
+
+Mutable and Immutable objects
+Write a Python program to demonstrate that a list is mutable by changing one of its elements.
+Write a Python program to demonstrate that a tuple is immutable by trying to change one of its elements.
+Write a program to create a string and try to change one of its characters. 
+Write a program to demonstrate that a dictionary is mutable by modifying an existing value.
+Write a program to demonstrate that a set is mutable by adding and removing elements.
+Write a program to create two variables referring to the same list and modify the list through one variable. Display both variables.
+Write a program to create two variables referring to the same integer and demonstrate the behavior when one variable is assigned a new value.
+Write a Python program using the id() function to check whether the memory identity of an object changes after modification.
