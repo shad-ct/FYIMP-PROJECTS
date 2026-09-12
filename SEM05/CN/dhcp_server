@@ -1,0 +1,43 @@
+import socket
+
+server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+server.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+
+server.bind(("0.0.0.0", 5002))
+
+ip_pool = ["192.168.1.10", "192.168.1.11", "192.168.1.12"]
+available_ips = ip_pool.copy()
+
+print("DHCP Server started...")
+
+while True:
+    data, address = server.recvfrom(1024)
+    message = data.decode()
+
+    print("Client:", message)
+
+    if message == "DHCPDISCOVER":
+        if available_ips:
+            offered_ip = available_ips[0]
+
+            reply = "DHCPOFFER:" + offered_ip
+            server.sendto(reply.encode(), address)
+
+            print("Offered IP:", offered_ip)
+        else:
+            server.sendto(b"NO_IP_AVAILABLE", address)
+
+    elif message.startswith("DHCPREQUEST"):
+        requested_ip = message.split(":")[1]
+
+        if requested_ip in available_ips:
+            available_ips.remove(requested_ip)
+
+            reply = "DHCPACK:" + requested_ip
+            server.sendto(reply.encode(), address)
+
+            print("Assigned IP:", requested_ip)
+        else:
+            server.sendto(b"DHCPNAK", address)
+
+server.close()
